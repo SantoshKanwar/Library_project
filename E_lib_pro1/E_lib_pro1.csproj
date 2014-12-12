@@ -1,0 +1,2235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FC86FF0-603E-44E4-9983-2EF8D5E557A4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E_lib_pro1</RootNamespace>
+    <AssemblyName>E_lib_pro1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMIN\Accession_list.aspx" />
+    <Content Include="ADMIN\Book_Issue_Return_list.aspx" />
+    <Content Include="ADMIN\Book_Master_list.aspx" />
+    <Content Include="ADMIN\College_entry.aspx" />
+    <Content Include="ADMIN\College_list.aspx" />
+    <Content Include="ADMIN\Composite1_Desig_entry.aspx" />
+    <Content Include="ADMIN\Composite1_Desig_list.aspx" />
+    <Content Include="ADMIN\Composite_Dep_entry.aspx" />
+    <Content Include="ADMIN\Composite_Dep_list.aspx" />
+    <Content Include="ADMIN\Department_entry.aspx" />
+    <Content Include="ADMIN\Department_list.aspx" />
+    <Content Include="ADMIN\Designation_entry.aspx" />
+    <Content Include="ADMIN\Designation_list.aspx" />
+    <Content Include="ADMIN\Fine_entry.aspx" />
+    <Content Include="ADMIN\Fine_list.aspx" />
+    <Content Include="ADMIN\form.html" />
+    <Content Include="ADMIN\index.html" />
+    <Content Include="ADMIN\lisensi.txt" />
+    <Content Include="ADMIN\Login.aspx" />
+    <Content Include="ADMIN\login.html" />
+    <Content Include="ADMIN\Member_entry.aspx" />
+    <Content Include="ADMIN\Member_list.aspx" />
+    <Content Include="ADMIN\auro-css\img\Administrator.png" />
+    <Content Include="ADMIN\auro-css\img\bg_kiri.png" />
+    <Content Include="ADMIN\auro-css\img\bukutamu.png" />
+    <Content Include="ADMIN\auro-css\img\daun.png" />
+    <Content Include="ADMIN\auro-css\img\detail.png" />
+    <Content Include="ADMIN\auro-css\img\gagal.png" />
+    <Content Include="ADMIN\auro-css\img\green.jpg" />
+    <Content Include="ADMIN\auro-css\img\green1.jpg" />
+    <Content Include="ADMIN\auro-css\img\halaman.png" />
+    <Content Include="ADMIN\auro-css\img\headerbg.jpg" />
+    <Content Include="ADMIN\auro-css\img\icon-left.png" />
+    <Content Include="ADMIN\auro-css\img\informasi.png" />
+    <Content Include="ADMIN\auro-css\img\latar.jpg" />
+    <Content Include="ADMIN\auro-css\img\lock.png" />
+    <Content Include="ADMIN\auro-css\img\logo.png" />
+    <Content Include="ADMIN\auro-css\img\oke.png" />
+    <Content Include="ADMIN\auro-css\img\photo.png" />
+    <Content Include="ADMIN\auro-css\img\posting.png" />
+    <Content Include="ADMIN\auro-css\img\quote.png" />
+    <Content Include="ADMIN\auro-css\img\sukses.png" />
+    <Content Include="ADMIN\auro-css\img\template.png" />
+    <Content Include="ADMIN\auro-css\auro-style.css" />
+    <Content Include="ADMIN\News_entry.aspx" />
+    <Content Include="ADMIN\News_list.aspx" />
+    <Content Include="ADMIN\Order_Detail_entry.aspx" />
+    <Content Include="ADMIN\Order_Detail_list.aspx" />
+    <Content Include="ADMIN\Order_Master_entry.aspx" />
+    <Content Include="ADMIN\Order_Master_list.aspx" />
+    <Content Include="ADMIN\preview.jpg" />
+    <Content Include="ADMIN\Purchase_Detail_entry.aspx" />
+    <Content Include="ADMIN\Purchase_Detail_list.aspx" />
+    <Content Include="ADMIN\Purchase_Master_entry.aspx" />
+    <Content Include="ADMIN\Purchase_Master_list.aspx" />
+    <Content Include="ADMIN\Registration_entry.aspx" />
+    <Content Include="ADMIN\Registration_list.aspx" />
+    <Content Include="ADMIN\Reservation_entry.aspx" />
+    <Content Include="ADMIN\Reservation_list.aspx" />
+    <Content Include="ADMIN\Setting_entry.aspx" />
+    <Content Include="ADMIN\Setting_list.aspx" />
+    <Content Include="ADMIN\tabel.html" />
+    <Content Include="ADMIN\Default.aspx" />
+    <Content Include="ADMIN\WebForm2.aspx" />
+    <Content Include="ADMIN\Change_Password.aspx" />
+    <Content Include="ADMIN\View_Total_Book.aspx" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="Book_Img\000.jpg" />
+    <Content Include="Book_Img\s1.jpg" />
+    <Content Include="Book_Img\s10.jpeg" />
+    <Content Include="Book_Img\s11.jpeg" />
+    <Content Include="Book_Img\s12.jpeg" />
+    <Content Include="Book_Img\s13.jpeg" />
+    <Content Include="Book_Img\s14.jpeg" />
+    <Content Include="Book_Img\s2.gif" />
+    <Content Include="Book_Img\s2.jpeg" />
+    <Content Include="Book_Img\s3.jpg" />
+    <Content Include="Book_Img\s4.jpg" />
+    <Content Include="Book_Img\s5.jpeg" />
+    <Content Include="Book_Img\s6.jpeg" />
+    <Content Include="Book_Img\s7.jpeg" />
+    <Content Include="Book_Img\s77.jpg" />
+    <Content Include="Book_Img\s8.jpeg" />
+    <Content Include="Book_Img\s9.jpeg" />
+    <Content Include="css\ddsmoothmenu.css" />
+    <Content Include="css\slimbox2.css" />
+    <Content Include="css\template.css" />
+    <Content Include="css\templatemo_style.css" />
+    <Content Include="css\validationEngine.jquery.css" />
+    <Content Include="Global.asax" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\avator.png" />
+    <Content Include="images\blog\01.jpg" />
+    <Content Include="images\blog\02.jpg" />
+    <Content Include="images\blog\03.jpg" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\closelabel.gif" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\feed.png" />
+    <Content Include="images\flickr.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\nextlabel.gif" />
+    <Content Include="images\portfolio\01.jpg" />
+    <Content Include="images\portfolio\02.jpg" />
+    <Content Include="images\portfolio\03.jpg" />
+    <Content Include="images\presentation.png" />
+    <Content Include="images\prevlabel.gif" />
+    <Content Include="images\screen_addicted-to-coffee.png" />
+    <Content Include="images\slider\01.jpg" />
+    <Content Include="images\slider\02.jpg" />
+    <Content Include="images\slider\03.jpg" />
+    <Content Include="images\slider\04.jpg" />
+    <Content Include="images\slider\05.jpg" />
+    <Content Include="images\slider\New Folder\23.png" />
+    <Content Include="images\slider\New Folder\e-ssmage.jpg" />
+    <Content Include="images\slider\New Folder\internet-library.jpg" />
+    <Content Include="images\slider\New Folder\main_banner.jpg" />
+    <Content Include="images\slider\New Folder\pic_eLibrary.jpg" />
+    <Content Include="images\slider\New Folder\RsPage-Header.jpg" />
+    <Content Include="images\slider\New Folder\s2.png" />
+    <Content Include="images\slider\New Folder\sad.jpg" />
+    <Content Include="images\slider\New Folder\sary.gif" />
+    <Content Include="images\slider\New Folder\sry.jpg" />
+    <Content Include="images\slider\New Folder\xxxxbrary.jpg" />
+    <Content Include="images\speech_bubble_grey.png" />
+    <Content Include="images\templatemo_body.jpg" />
+    <Content Include="images\templatemo_divider.png" />
+    <Content Include="images\templatemo_image_01.jpg" />
+    <Content Include="images\templatemo_image_02.jpg" />
+    <Content Include="images\templatemo_image_03.jpg" />
+    <Content Include="images\templatemo_list.png" />
+    <Content Include="images\templatemo_logo.png" />
+    <Content Include="images\templatemo_main_bottom.png" />
+    <Content Include="images\templatemo_main_middle.png" />
+    <Content Include="images\templatemo_main_top.png" />
+    <Content Include="images\templatemo_menu_bottom.png" />
+    <Content Include="images\templatemo_menu_divider.png" />
+    <Content Include="images\templatemo_menu_middle.png" />
+    <Content Include="images\templatemo_slider.png" />
+    <Content Include="images\templatemo_top.png" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\wallet_louis_vuitton_bills.png" />
+    <Content Include="images\youtube.png" />
+    <Content Include="img\000.jpg" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\10.jpg" />
+    <Content Include="img\11.jpg" />
+    <Content Include="img\26.jpg" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\6.jpg" />
+    <Content Include="img\7.jpg" />
+    <Content Include="img\Director-principal.jpg" />
+    <Content Include="img\ff1.jpeg" />
+    <Content Include="img\Image0120.jpg" />
+    <Content Include="img\Image0132.jpg" />
+    <Content Include="img\login.png" />
+    <Content Include="img\rr1.jpeg" />
+    <Content Include="jquery-ui-1.10.0\AUTHORS.txt" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\collapsible.html" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\custom-icons.html" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\fillspace.html" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\hoverintent.html" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\no-auto-height.html" />
+    <Content Include="jquery-ui-1.10.0\demos\accordion\sortable.html" />
+    <Content Include="jquery-ui-1.10.0\demos\addClass\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\addClass\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\animate\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\animate\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\categories.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\combobox.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\custom-data.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\folding.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\images\jqueryui_32x32.png" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\images\jquery_32x32.png" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\images\sizzlejs_32x32.png" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\images\transparent_1x1.png" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\images\ui-anim_basic_16x16.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\london.xml" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\maxheight.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\multiple-remote.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\multiple.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\remote.html" />
+    <Content Include="jquery-ui-1.10.0\demos\autocomplete\xml.html" />
+    <Content Include="jquery-ui-1.10.0\demos\button\checkbox.html" />
+    <Content Include="jquery-ui-1.10.0\demos\button\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\button\icons.html" />
+    <Content Include="jquery-ui-1.10.0\demos\button\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\button\radio.html" />
+    <Content Include="jquery-ui-1.10.0\demos\button\splitbutton.html" />
+    <Content Include="jquery-ui-1.10.0\demos\button\toolbar.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\alt-field.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\animation.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\buttonbar.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\date-formats.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\date-range.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\icon-trigger.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\images\calendar.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\inline.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\localization.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\min-max.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\multiple-calendars.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\other-months.html" />
+    <Content Include="jquery-ui-1.10.0\demos\datepicker\show-week.html" />
+    <Content Include="jquery-ui-1.10.0\demos\demos.css" />
+    <Content Include="jquery-ui-1.10.0\demos\dialog\animated.html" />
+    <Content Include="jquery-ui-1.10.0\demos\dialog\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\dialog\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\dialog\modal-confirmation.html" />
+    <Content Include="jquery-ui-1.10.0\demos\dialog\modal-form.html" />
+    <Content Include="jquery-ui-1.10.0\demos\dialog\modal-message.html" />
+    <Content Include="jquery-ui-1.10.0\demos\dialog\modal.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\constrain-movement.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\cursor-style.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\delay-start.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\events.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\handle.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\revert.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\scroll.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\snap-to.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\sortable.html" />
+    <Content Include="jquery-ui-1.10.0\demos\draggable\visual-feedback.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\accepted-elements.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\photo-manager.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\propagation.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\revert.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\shopping-cart.html" />
+    <Content Include="jquery-ui-1.10.0\demos\droppable\visual-feedback.html" />
+    <Content Include="jquery-ui-1.10.0\demos\effect\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\effect\easing.html" />
+    <Content Include="jquery-ui-1.10.0\demos\effect\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\hide\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\hide\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\images\calendar.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\images\demo-config-on-tile.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\images\demo-config-on.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\images\demo-spindown-closed.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\images\demo-spindown-open.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\images\icon-docs-info.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\images\pbar-ani.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\menu\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\menu\icons.html" />
+    <Content Include="jquery-ui-1.10.0\demos\menu\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\position\cycler.html" />
+    <Content Include="jquery-ui-1.10.0\demos\position\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\position\images\earth.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\position\images\flight.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\position\images\rocket.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\position\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\progressbar\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="jquery-ui-1.10.0\demos\progressbar\indeterminate.html" />
+    <Content Include="jquery-ui-1.10.0\demos\progressbar\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\progressbar\label.html" />
+    <Content Include="jquery-ui-1.10.0\demos\removeClass\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\removeClass\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\animate.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\aspect-ratio.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\constrain-area.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\delay-start.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\helper.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\max-min.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\snap-to-grid.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\synchronous-resize.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\textarea.html" />
+    <Content Include="jquery-ui-1.10.0\demos\resizable\visual-feedback.html" />
+    <Content Include="jquery-ui-1.10.0\demos\selectable\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\selectable\display-grid.html" />
+    <Content Include="jquery-ui-1.10.0\demos\selectable\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\selectable\serialize.html" />
+    <Content Include="jquery-ui-1.10.0\demos\show\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\show\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\colorpicker.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\hotelrooms.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\multiple-vertical.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\range-vertical.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\range.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\rangemax.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\rangemin.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\side-scroll.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\slider-vertical.html" />
+    <Content Include="jquery-ui-1.10.0\demos\slider\steps.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\connect-lists.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\delay-start.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\display-grid.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\empty-lists.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\items.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\placeholder.html" />
+    <Content Include="jquery-ui-1.10.0\demos\sortable\portlets.html" />
+    <Content Include="jquery-ui-1.10.0\demos\spinner\currency.html" />
+    <Content Include="jquery-ui-1.10.0\demos\spinner\decimal.html" />
+    <Content Include="jquery-ui-1.10.0\demos\spinner\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\spinner\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\spinner\latlong.html" />
+    <Content Include="jquery-ui-1.10.0\demos\spinner\overflow.html" />
+    <Content Include="jquery-ui-1.10.0\demos\spinner\time.html" />
+    <Content Include="jquery-ui-1.10.0\demos\switchClass\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\switchClass\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\ajax.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\ajax\content1.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\ajax\content2.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\bottom.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\collapsible.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\manipulation.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\mouseover.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\sortable.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tabs\vertical.html" />
+    <Content Include="jquery-ui-1.10.0\demos\toggleClass\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\toggleClass\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\toggle\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\toggle\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\ajax\content1.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\ajax\content2.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\custom-animation.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\custom-content.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\custom-style.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\forms.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\images\st-stephens.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\images\tower-bridge.jpg" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\index.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\tracking.html" />
+    <Content Include="jquery-ui-1.10.0\demos\tooltip\video-player.html" />
+    <Content Include="jquery-ui-1.10.0\demos\widget\default.html" />
+    <Content Include="jquery-ui-1.10.0\demos\widget\index.html" />
+    <Content Include="jquery-ui-1.10.0\external\globalize.culture.de-DE.js" />
+    <Content Include="jquery-ui-1.10.0\external\globalize.culture.ja-JP.js" />
+    <Content Include="jquery-ui-1.10.0\external\globalize.js" />
+    <Content Include="jquery-ui-1.10.0\external\jquery.mousewheel.js" />
+    <Content Include="jquery-ui-1.10.0\external\jshint.js" />
+    <Content Include="jquery-ui-1.10.0\external\qunit.css" />
+    <Content Include="jquery-ui-1.10.0\external\qunit.js" />
+    <Content Include="jquery-ui-1.10.0\grunt.js" />
+    <Content Include="jquery-ui-1.10.0\jquery-1.9.0.js" />
+    <Content Include="jquery-ui-1.10.0\MIT-LICENSE.txt" />
+    <Content Include="jquery-ui-1.10.0\tests\index.css" />
+    <Content Include="jquery-ui-1.10.0\tests\index.html" />
+    <Content Include="jquery-ui-1.10.0\tests\index.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.6.1.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.6.2.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.6.3.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.6.4.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.6.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.7.1.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.7.2.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.7.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.8.0.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.8.1.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.8.2.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.8.3.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery-1.9.0.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery.js" />
+    <Content Include="jquery-ui-1.10.0\tests\jquery.simulate.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\accordion.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\accordion_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\accordion_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\accordion_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\accordion_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\accordion_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\accordion_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\accordion\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\autocomplete.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\autocomplete_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\autocomplete_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\autocomplete_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\autocomplete_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\autocomplete_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\remote_object_array_labels.txt" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\remote_object_array_values.txt" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\autocomplete\remote_string_array.txt" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\button\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\button\button.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\button\button_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\button\button_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\button\button_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\button\button_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\button\button_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\core\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\core\core.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\core\core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\core\selector.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\datepicker.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\datepicker_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\datepicker_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\datepicker_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\datepicker_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\datepicker_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\datepicker_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\datepicker\images\calendar.gif" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_deprecated.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_deprecated.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\dialog\dialog_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\draggable.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\draggable_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\draggable_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\draggable_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\draggable_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\draggable_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\draggable\draggable_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\droppable.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\droppable_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\droppable_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\droppable_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\droppable_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\droppable_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\droppable\droppable_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\effects\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\effects\effects.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\effects\effects_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\effects\effects_scale.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\images\jqueryui_32x32.png" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\index.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\menu.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\menu_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\menu_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\menu_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\menu_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\menu_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\menu\menu_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\position\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\position\position.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\position\position_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\progressbar\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\progressbar\progressbar.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\progressbar\progressbar_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\progressbar\progressbar_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\progressbar\progressbar_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\progressbar\progressbar_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\progressbar\progressbar_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\qunit-composite.css" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\qunit-composite.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\images\test.jpg" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\resizable.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\resizable_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\resizable_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\resizable_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\resizable_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\resizable_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\resizable\resizable_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\selectable\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\selectable\selectable.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\selectable\selectable_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\selectable\selectable_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\selectable\selectable_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\selectable\selectable_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\selectable\selectable_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\slider\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\slider\slider.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\slider\slider_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\slider\slider_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\slider\slider_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\slider\slider_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\slider\slider_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\sortable.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\sortable_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\sortable_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\sortable_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\sortable_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\sortable_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\sortable\sortable_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\spinner.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\spinner_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\spinner_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\spinner_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\spinner_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\spinner_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\spinner\spinner_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\subsuite.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\swarminject.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\data\test.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\tabs.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\tabs_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\tabs_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\tabs_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\tabs_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\tabs_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tabs\tabs_test_helpers.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\testsuite.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tooltip\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tooltip\tooltip.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tooltip\tooltip_common.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tooltip\tooltip_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tooltip\tooltip_events.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tooltip\tooltip_methods.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\tooltip\tooltip_options.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\widget\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\widget\widget.html" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\widget\widget_animation.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\widget\widget_core.js" />
+    <Content Include="jquery-ui-1.10.0\tests\unit\widget\widget_extend.js" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\accordion\icons.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\addClass\queue.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\button\button.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\button\performance.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\accordion_tabs.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\datepicker_dialog.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\dialog_widgets.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\draggable_accordion.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\draggable_accordion_accordion_tabs_draggable.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\sortable_accordion_sortable_tabs.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\tabs_tabs.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\compound\tabs_tooltips.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\dialog\animated.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\dialog\complex-dialogs.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\dialog\form.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\dialog\performance.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\effects\all.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\effects\effects.css" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\effects\effects.js" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\effects\scale.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\index.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\menu\menu.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\position\position.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\position\position_feedback.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\theme.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\tooltip\animations.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\tooltip\tooltip.html" />
+    <Content Include="jquery-ui-1.10.0\tests\visual\visual.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\animated-overlay.gif" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery-ui.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.accordion.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.all.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.base.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.button.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.core.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.dialog.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.menu.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.resizable.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.selectable.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.slider.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.spinner.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.tabs.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.theme.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="jquery-ui-1.10.0\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-be.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-cy-GB.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-fr-CA.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-hi.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ka.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-kk.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-km.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ky.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-lb.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-mk.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-nb.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-nl-BE.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-nn.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="jquery-ui-1.10.0\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery-ui.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.accordion.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.autocomplete.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.button.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.core.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.datepicker.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.dialog.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.draggable.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.droppable.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-blind.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-bounce.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-clip.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-drop.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-explode.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-fade.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-fold.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-highlight.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-pulsate.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-scale.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-shake.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-slide.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect-transfer.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.effect.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.menu.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.mouse.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.position.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.progressbar.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.resizable.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.selectable.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.slider.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.sortable.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.spinner.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.tabs.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.tooltip.js" />
+    <Content Include="jquery-ui-1.10.0\ui\jquery.ui.widget.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery-ui-i18n.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-af.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ar-DZ.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ar.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-az.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-be.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-bg.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-bs.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ca.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-cs.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-cy-GB.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-da.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-de.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-el.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-en-AU.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-en-GB.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-en-NZ.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-eo.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-es.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-et.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-eu.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-fa.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-fi.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-fo.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-fr-CA.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-fr-CH.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-fr.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-gl.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-he.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-hi.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-hr.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-hu.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-hy.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-id.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-is.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-it.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ja.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ka.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-kk.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-km.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ko.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ky.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-lb.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-lt.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-lv.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-mk.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ml.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ms.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-nb.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-nl-BE.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-nl.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-nn.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-no.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-pl.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-pt-BR.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-pt.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-rm.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ro.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ru.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-sk.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-sl.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-sq.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-sr-SR.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-sr.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-sv.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-ta.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-th.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-tj.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-tr.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-uk.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-vi.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-zh-CN.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-zh-HK.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\i18n\jquery.ui.datepicker-zh-TW.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery-ui.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-blind.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-bounce.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-clip.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-drop.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-explode.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-fade.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-fold.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-highlight.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-pulsate.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-scale.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-shake.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-slide.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect-transfer.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.effect.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.menu.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.spinner.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.tooltip.min.js" />
+    <Content Include="jquery-ui-1.10.0\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="js\ddsmoothmenu.js" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="js\jquery-1.6.min.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.kwicks-1.5.1.js" />
+    <Content Include="js\jquery.kwicks-1.5.1.pack.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.validationEngine-en.js" />
+    <Content Include="js\jquery.validationEngine.js" />
+    <Content Include="js\slimbox2.js" />
+    <Content Include="LIBRARIAN\Accession_entry.aspx" />
+    <Content Include="LIBRARIAN\Accession_list.aspx" />
+    <Content Include="LIBRARIAN\auro-css\auro-style.css" />
+    <Content Include="LIBRARIAN\auro-css\img\Administrator.png" />
+    <Content Include="LIBRARIAN\auro-css\img\bg_kiri.png" />
+    <Content Include="LIBRARIAN\auro-css\img\bukutamu.png" />
+    <Content Include="LIBRARIAN\auro-css\img\daun.png" />
+    <Content Include="LIBRARIAN\auro-css\img\detail.png" />
+    <Content Include="LIBRARIAN\auro-css\img\gagal.png" />
+    <Content Include="LIBRARIAN\auro-css\img\green.jpg" />
+    <Content Include="LIBRARIAN\auro-css\img\green1.jpg" />
+    <Content Include="LIBRARIAN\auro-css\img\halaman.png" />
+    <Content Include="LIBRARIAN\auro-css\img\headerbg.jpg" />
+    <Content Include="LIBRARIAN\auro-css\img\icon-left.png" />
+    <Content Include="LIBRARIAN\auro-css\img\informasi.png" />
+    <Content Include="LIBRARIAN\auro-css\img\latar.jpg" />
+    <Content Include="LIBRARIAN\auro-css\img\lock.png" />
+    <Content Include="LIBRARIAN\auro-css\img\logo.png" />
+    <Content Include="LIBRARIAN\auro-css\img\oke.png" />
+    <Content Include="LIBRARIAN\auro-css\img\photo.png" />
+    <Content Include="LIBRARIAN\auro-css\img\posting.png" />
+    <Content Include="LIBRARIAN\auro-css\img\quote.png" />
+    <Content Include="LIBRARIAN\auro-css\img\sukses.png" />
+    <Content Include="LIBRARIAN\auro-css\img\template.png" />
+    <Content Include="LIBRARIAN\Book_Issue_Return_entry.aspx" />
+    <Content Include="LIBRARIAN\Book_Issue_Return_list.aspx" />
+    <Content Include="LIBRARIAN\Book_Master_entry.aspx" />
+    <Content Include="LIBRARIAN\Book_Master_list.aspx" />
+    <Content Include="LIBRARIAN\College_entry.aspx" />
+    <Content Include="LIBRARIAN\College_list.aspx" />
+    <Content Include="LIBRARIAN\Fine_entry.aspx" />
+    <Content Include="LIBRARIAN\Fine_list.aspx" />
+    <Content Include="LIBRARIAN\form.html" />
+    <Content Include="LIBRARIAN\images\arrows.png" />
+    <Content Include="LIBRARIAN\images\avator.png" />
+    <Content Include="LIBRARIAN\images\blog\01.jpg" />
+    <Content Include="LIBRARIAN\images\blog\02.jpg" />
+    <Content Include="LIBRARIAN\images\blog\03.jpg" />
+    <Content Include="LIBRARIAN\images\close.gif" />
+    <Content Include="LIBRARIAN\images\closelabel.gif" />
+    <Content Include="LIBRARIAN\images\facebook.png" />
+    <Content Include="LIBRARIAN\images\feed.png" />
+    <Content Include="LIBRARIAN\images\flickr.png" />
+    <Content Include="LIBRARIAN\images\loading.gif" />
+    <Content Include="LIBRARIAN\images\nextlabel.gif" />
+    <Content Include="LIBRARIAN\images\portfolio\01.jpg" />
+    <Content Include="LIBRARIAN\images\portfolio\02.jpg" />
+    <Content Include="LIBRARIAN\images\portfolio\03.jpg" />
+    <Content Include="LIBRARIAN\images\presentation.png" />
+    <Content Include="LIBRARIAN\images\prevlabel.gif" />
+    <Content Include="LIBRARIAN\images\screen_addicted-to-coffee.png" />
+    <Content Include="LIBRARIAN\images\slider\01.jpg" />
+    <Content Include="LIBRARIAN\images\slider\02.jpg" />
+    <Content Include="LIBRARIAN\images\slider\03.jpg" />
+    <Content Include="LIBRARIAN\images\slider\04.jpg" />
+    <Content Include="LIBRARIAN\images\slider\05.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\23.png" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\e-ssmage.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\internet-library.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\main_banner.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\pic_eLibrary.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\RsPage-Header.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\s2.png" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\sad.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\sary.gif" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\sry.jpg" />
+    <Content Include="LIBRARIAN\images\slider\New Folder\xxxxbrary.jpg" />
+    <Content Include="LIBRARIAN\images\speech_bubble_grey.png" />
+    <Content Include="LIBRARIAN\images\templatemo_body.jpg" />
+    <Content Include="LIBRARIAN\images\templatemo_divider.png" />
+    <Content Include="LIBRARIAN\images\templatemo_image_01.jpg" />
+    <Content Include="LIBRARIAN\images\templatemo_image_02.jpg" />
+    <Content Include="LIBRARIAN\images\templatemo_image_03.jpg" />
+    <Content Include="LIBRARIAN\images\templatemo_list.png" />
+    <Content Include="LIBRARIAN\images\templatemo_logo.png" />
+    <Content Include="LIBRARIAN\images\templatemo_main_bottom.png" />
+    <Content Include="LIBRARIAN\images\templatemo_main_middle.png" />
+    <Content Include="LIBRARIAN\images\templatemo_main_top.png" />
+    <Content Include="LIBRARIAN\images\templatemo_menu_bottom.png" />
+    <Content Include="LIBRARIAN\images\templatemo_menu_divider.png" />
+    <Content Include="LIBRARIAN\images\templatemo_menu_middle.png" />
+    <Content Include="LIBRARIAN\images\templatemo_slider.png" />
+    <Content Include="LIBRARIAN\images\templatemo_top.png" />
+    <Content Include="LIBRARIAN\images\twitter.png" />
+    <Content Include="LIBRARIAN\images\wallet_louis_vuitton_bills.png" />
+    <Content Include="LIBRARIAN\images\youtube.png" />
+    <Content Include="LIBRARIAN\img\1.jpg" />
+    <Content Include="LIBRARIAN\img\10.jpg" />
+    <Content Include="LIBRARIAN\img\11.jpg" />
+    <Content Include="LIBRARIAN\img\12.jpg" />
+    <Content Include="LIBRARIAN\img\13.jpg" />
+    <Content Include="LIBRARIAN\img\14.jpg" />
+    <Content Include="LIBRARIAN\img\2.jpg" />
+    <Content Include="LIBRARIAN\img\23.jpg" />
+    <Content Include="LIBRARIAN\img\26.jpg" />
+    <Content Include="LIBRARIAN\img\3.jpg" />
+    <Content Include="LIBRARIAN\img\31.jpg" />
+    <Content Include="LIBRARIAN\img\4.jpg" />
+    <Content Include="LIBRARIAN\img\5.jpg" />
+    <Content Include="LIBRARIAN\img\6.jpg" />
+    <Content Include="LIBRARIAN\img\7.jpg" />
+    <Content Include="LIBRARIAN\img\8.jpg" />
+    <Content Include="LIBRARIAN\img\9.jpg" />
+    <Content Include="LIBRARIAN\index.html" />
+    <Content Include="LIBRARIAN\js\ddsmoothmenu.js" />
+    <Content Include="LIBRARIAN\js\jquery-1.3.2.min.js" />
+    <Content Include="LIBRARIAN\js\jquery.easing.1.3.js" />
+    <Content Include="LIBRARIAN\js\jquery.js" />
+    <Content Include="LIBRARIAN\js\jquery.kwicks-1.5.1.js" />
+    <Content Include="LIBRARIAN\js\jquery.kwicks-1.5.1.pack.js" />
+    <Content Include="LIBRARIAN\js\jquery.min.js" />
+    <Content Include="LIBRARIAN\js\slimbox2.js" />
+    <Content Include="LIBRARIAN\lisensi.txt" />
+    <Content Include="LIBRARIAN\login.html" />
+    <Content Include="LIBRARIAN\Member_entry.aspx" />
+    <Content Include="LIBRARIAN\Member_list.aspx" />
+    <Content Include="LIBRARIAN\News_entry.aspx" />
+    <Content Include="LIBRARIAN\News_list.aspx" />
+    <Content Include="LIBRARIAN\Order_Detail_entry.aspx" />
+    <Content Include="LIBRARIAN\Order_Detail_list.aspx" />
+    <Content Include="LIBRARIAN\Order_Master_entry.aspx" />
+    <Content Include="LIBRARIAN\Order_Master_list.aspx" />
+    <Content Include="LIBRARIAN\preview.jpg" />
+    <Content Include="LIBRARIAN\Purchase_Detail_entry.aspx" />
+    <Content Include="LIBRARIAN\Purchase_Detail_list.aspx" />
+    <Content Include="LIBRARIAN\Purchase_Master_entry.aspx" />
+    <Content Include="LIBRARIAN\Purchase_Master_list.aspx" />
+    <Content Include="LIBRARIAN\Reservation_list.aspx" />
+    <Content Include="LIBRARIAN\Book_Issue_entry.aspx" />
+    <Content Include="LIBRARIAN\Book_Return_entry.aspx" />
+    <Content Include="LIBRARIAN\Default.aspx" />
+    <Content Include="LIBRARIAN\tabel.html" />
+    <Content Include="LIBRARIAN\Change_Password.aspx" />
+    <Content Include="LIBRARIAN\Setting_entry.aspx" />
+    <Content Include="LIBRARIAN\Setting_List.aspx" />
+    <Content Include="LIBRARIAN\View_Total_Book.aspx" />
+    <Content Include="LIBRARIAN\Book_Issue_List.aspx" />
+    <Content Include="LIBRARIAN\Book_Return_List.aspx" />
+    <Content Include="Report\Rpt_Accession.aspx" />
+    <Content Include="Report\Rpt_Book_Issue.aspx" />
+    <Content Include="Report\Rpt_Book_Issue_Return.aspx" />
+    <Content Include="Report\Rpt_Book_Master.aspx" />
+    <Content Include="Report\Rpt_Book_Return.aspx" />
+    <Content Include="Report\Rpt_Fine.aspx" />
+    <Content Include="Report\Rpt_Member.aspx" />
+    <Content Include="Report\Rpt_Order_Detail.aspx" />
+    <Content Include="Report\Rpt_Order_Master.aspx" />
+    <Content Include="Report\Rpt_Purchase_Detail.aspx" />
+    <Content Include="Report\Rpt_Purchase_Master.aspx" />
+    <Content Include="Report\Rpt_Reservation.aspx" />
+    <Content Include="Report\Rpt_Setting.aspx" />
+    <Content Include="Report\Rpt_ViewTotalbook.aspx" />
+    <Content Include="USER\Book_Issue_Return_list.aspx" />
+    <Content Include="USER\Book_Master_list.aspx" />
+    <Content Include="USER\css\ddsmoothmenu.css" />
+    <Content Include="USER\css\slimbox2.css" />
+    <Content Include="USER\css\templatemo_style.css" />
+    <Content Include="USER\images\arrows.png" />
+    <Content Include="USER\images\avator.png" />
+    <Content Include="USER\images\blog\01.jpg" />
+    <Content Include="USER\images\blog\02.jpg" />
+    <Content Include="USER\images\blog\03.jpg" />
+    <Content Include="USER\images\close.gif" />
+    <Content Include="USER\images\closelabel.gif" />
+    <Content Include="USER\images\facebook.png" />
+    <Content Include="USER\images\feed.png" />
+    <Content Include="USER\images\flickr.png" />
+    <Content Include="USER\images\loading.gif" />
+    <Content Include="USER\images\nextlabel.gif" />
+    <Content Include="USER\images\portfolio\01.jpg" />
+    <Content Include="USER\images\portfolio\02.jpg" />
+    <Content Include="USER\images\portfolio\03.jpg" />
+    <Content Include="USER\images\presentation.png" />
+    <Content Include="USER\images\prevlabel.gif" />
+    <Content Include="USER\images\screen_addicted-to-coffee.png" />
+    <Content Include="USER\images\slider\01.jpg" />
+    <Content Include="USER\images\slider\02.jpg" />
+    <Content Include="USER\images\slider\03.jpg" />
+    <Content Include="USER\images\slider\04.jpg" />
+    <Content Include="USER\images\slider\05.jpg" />
+    <Content Include="USER\images\slider\New Folder\23.png" />
+    <Content Include="USER\images\slider\New Folder\e-ssmage.jpg" />
+    <Content Include="USER\images\slider\New Folder\internet-library.jpg" />
+    <Content Include="USER\images\slider\New Folder\main_banner.jpg" />
+    <Content Include="USER\images\slider\New Folder\pic_eLibrary.jpg" />
+    <Content Include="USER\images\slider\New Folder\RsPage-Header.jpg" />
+    <Content Include="USER\images\slider\New Folder\s2.png" />
+    <Content Include="USER\images\slider\New Folder\sad.jpg" />
+    <Content Include="USER\images\slider\New Folder\sary.gif" />
+    <Content Include="USER\images\slider\New Folder\sry.jpg" />
+    <Content Include="USER\images\slider\New Folder\xxxxbrary.jpg" />
+    <Content Include="USER\images\speech_bubble_grey.png" />
+    <Content Include="USER\images\templatemo_body.jpg" />
+    <Content Include="USER\images\templatemo_divider.png" />
+    <Content Include="USER\images\templatemo_image_01.jpg" />
+    <Content Include="USER\images\templatemo_image_02.jpg" />
+    <Content Include="USER\images\templatemo_image_03.jpg" />
+    <Content Include="USER\images\templatemo_list.png" />
+    <Content Include="USER\images\templatemo_logo.png" />
+    <Content Include="USER\images\templatemo_main_bottom.png" />
+    <Content Include="USER\images\templatemo_main_middle.png" />
+    <Content Include="USER\images\templatemo_main_top.png" />
+    <Content Include="USER\images\templatemo_menu_bottom.png" />
+    <Content Include="USER\images\templatemo_menu_divider.png" />
+    <Content Include="USER\images\templatemo_menu_middle.png" />
+    <Content Include="USER\images\templatemo_slider.png" />
+    <Content Include="USER\images\templatemo_top.png" />
+    <Content Include="USER\images\twitter.png" />
+    <Content Include="USER\images\wallet_louis_vuitton_bills.png" />
+    <Content Include="USER\images\youtube.png" />
+    <Content Include="USER\img\1.jpg" />
+    <Content Include="USER\img\10.jpg" />
+    <Content Include="USER\img\11.jpg" />
+    <Content Include="USER\img\26.jpg" />
+    <Content Include="USER\img\3.jpg" />
+    <Content Include="USER\img\6.jpg" />
+    <Content Include="USER\img\7.jpg" />
+    <Content Include="USER\img\Director-principal.jpg" />
+    <Content Include="USER\img\Image0120.jpg" />
+    <Content Include="USER\img\Image0132.jpg" />
+    <Content Include="USER\js\ddsmoothmenu.js" />
+    <Content Include="USER\js\jquery-1.3.2.min.js" />
+    <Content Include="USER\js\jquery.easing.1.3.js" />
+    <Content Include="USER\js\jquery.js" />
+    <Content Include="USER\js\jquery.kwicks-1.5.1.js" />
+    <Content Include="USER\js\jquery.kwicks-1.5.1.pack.js" />
+    <Content Include="USER\js\jquery.min.js" />
+    <Content Include="USER\js\slimbox2.js" />
+    <Content Include="USER\Profile.aspx" />
+    <Content Include="USER\Reservation_entry.aspx" />
+    <Content Include="USER\Default.aspx" />
+    <Content Include="USER\Change_Password.aspx" />
+    <Content Include="USER\Reservation_List.aspx" />
+    <Content Include="USER\ViewBook.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Login.aspx" />
+    <Content Include="Member.aspx" />
+    <Content Include="Book.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="ForgotPass.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="WebForm7.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN\Accession_list.aspx.cs">
+      <DependentUpon>Accession_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Accession_list.aspx.designer.cs">
+      <DependentUpon>Accession_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ADMIN.Master.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ADMIN.Master.designer.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Book_Issue_Return_list.aspx.cs">
+      <DependentUpon>Book_Issue_Return_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Book_Issue_Return_list.aspx.designer.cs">
+      <DependentUpon>Book_Issue_Return_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Book_Master_list.aspx.cs">
+      <DependentUpon>Book_Master_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Book_Master_list.aspx.designer.cs">
+      <DependentUpon>Book_Master_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\College_entry.aspx.cs">
+      <DependentUpon>College_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\College_entry.aspx.designer.cs">
+      <DependentUpon>College_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\College_list.aspx.cs">
+      <DependentUpon>College_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\College_list.aspx.designer.cs">
+      <DependentUpon>College_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Composite1_Desig_entry.aspx.cs">
+      <DependentUpon>Composite1_Desig_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Composite1_Desig_entry.aspx.designer.cs">
+      <DependentUpon>Composite1_Desig_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Composite1_Desig_list.aspx.cs">
+      <DependentUpon>Composite1_Desig_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Composite1_Desig_list.aspx.designer.cs">
+      <DependentUpon>Composite1_Desig_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Composite_Dep_entry.aspx.cs">
+      <DependentUpon>Composite_Dep_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Composite_Dep_entry.aspx.designer.cs">
+      <DependentUpon>Composite_Dep_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Composite_Dep_list.aspx.cs">
+      <DependentUpon>Composite_Dep_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Composite_Dep_list.aspx.designer.cs">
+      <DependentUpon>Composite_Dep_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Department_entry.aspx.cs">
+      <DependentUpon>Department_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Department_entry.aspx.designer.cs">
+      <DependentUpon>Department_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Department_list.aspx.cs">
+      <DependentUpon>Department_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Department_list.aspx.designer.cs">
+      <DependentUpon>Department_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Designation_entry.aspx.cs">
+      <DependentUpon>Designation_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Designation_entry.aspx.designer.cs">
+      <DependentUpon>Designation_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Designation_list.aspx.cs">
+      <DependentUpon>Designation_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Designation_list.aspx.designer.cs">
+      <DependentUpon>Designation_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Fine_entry.aspx.cs">
+      <DependentUpon>Fine_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Fine_entry.aspx.designer.cs">
+      <DependentUpon>Fine_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Fine_list.aspx.cs">
+      <DependentUpon>Fine_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Fine_list.aspx.designer.cs">
+      <DependentUpon>Fine_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Member_entry.aspx.cs">
+      <DependentUpon>Member_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Member_entry.aspx.designer.cs">
+      <DependentUpon>Member_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Member_list.aspx.cs">
+      <DependentUpon>Member_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Member_list.aspx.designer.cs">
+      <DependentUpon>Member_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\News_entry.aspx.cs">
+      <DependentUpon>News_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\News_entry.aspx.designer.cs">
+      <DependentUpon>News_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\News_list.aspx.cs">
+      <DependentUpon>News_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\News_list.aspx.designer.cs">
+      <DependentUpon>News_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Order_Detail_entry.aspx.cs">
+      <DependentUpon>Order_Detail_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Order_Detail_entry.aspx.designer.cs">
+      <DependentUpon>Order_Detail_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Order_Detail_list.aspx.cs">
+      <DependentUpon>Order_Detail_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Order_Detail_list.aspx.designer.cs">
+      <DependentUpon>Order_Detail_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Order_Master_entry.aspx.cs">
+      <DependentUpon>Order_Master_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Order_Master_entry.aspx.designer.cs">
+      <DependentUpon>Order_Master_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Order_Master_list.aspx.cs">
+      <DependentUpon>Order_Master_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Order_Master_list.aspx.designer.cs">
+      <DependentUpon>Order_Master_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Detail_entry.aspx.cs">
+      <DependentUpon>Purchase_Detail_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Detail_entry.aspx.designer.cs">
+      <DependentUpon>Purchase_Detail_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Detail_list.aspx.cs">
+      <DependentUpon>Purchase_Detail_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Detail_list.aspx.designer.cs">
+      <DependentUpon>Purchase_Detail_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Master_entry.aspx.cs">
+      <DependentUpon>Purchase_Master_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Master_entry.aspx.designer.cs">
+      <DependentUpon>Purchase_Master_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Master_list.aspx.cs">
+      <DependentUpon>Purchase_Master_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Purchase_Master_list.aspx.designer.cs">
+      <DependentUpon>Purchase_Master_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Registration_entry.aspx.cs">
+      <DependentUpon>Registration_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Registration_entry.aspx.designer.cs">
+      <DependentUpon>Registration_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Registration_list.aspx.cs">
+      <DependentUpon>Registration_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Registration_list.aspx.designer.cs">
+      <DependentUpon>Registration_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Reservation_entry.aspx.cs">
+      <DependentUpon>Reservation_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Reservation_entry.aspx.designer.cs">
+      <DependentUpon>Reservation_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Reservation_list.aspx.cs">
+      <DependentUpon>Reservation_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Reservation_list.aspx.designer.cs">
+      <DependentUpon>Reservation_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Setting_entry.aspx.cs">
+      <DependentUpon>Setting_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Setting_entry.aspx.designer.cs">
+      <DependentUpon>Setting_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Setting_list.aspx.cs">
+      <DependentUpon>Setting_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Setting_list.aspx.designer.cs">
+      <DependentUpon>Setting_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Change_Password.aspx.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Change_Password.aspx.designer.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\View_Total_Book.aspx.cs">
+      <DependentUpon>View_Total_Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\View_Total_Book.aspx.designer.cs">
+      <DependentUpon>View_Total_Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\MailSender.cs" />
+    <Compile Include="BLL\AccessionHandler.cs" />
+    <Compile Include="BLL\Book_Issue_ReturnHandler.cs" />
+    <Compile Include="BLL\Book_MasterHandler.cs" />
+    <Compile Include="BLL\CollegeHandler.cs" />
+    <Compile Include="BLL\Composite1_DesigHandler.cs" />
+    <Compile Include="BLL\Composite_DepHandler.cs" />
+    <Compile Include="BLL\DepartmentHandler.cs" />
+    <Compile Include="BLL\DesignationHandler.cs" />
+    <Compile Include="BLL\FineHandler.cs" />
+    <Compile Include="BLL\MemberHandler.cs" />
+    <Compile Include="BLL\NewsHandler.cs" />
+    <Compile Include="BLL\Order_DetailHandler.cs" />
+    <Compile Include="BLL\Order_MasterHandler.cs" />
+    <Compile Include="BLL\Purchase_DetailHandler.cs" />
+    <Compile Include="BLL\Purchase_MasterHandler.cs" />
+    <Compile Include="BLL\RegistrationHandler.cs" />
+    <Compile Include="BLL\ReservationHandler.cs" />
+    <Compile Include="BLL\SettingHandler.cs" />
+    <Compile Include="DAL\Accession.cs" />
+    <Compile Include="DAL\AccessionDBAccess.cs" />
+    <Compile Include="DAL\Book_Issue_Return.cs" />
+    <Compile Include="DAL\Book_Issue_ReturnDBAccess.cs" />
+    <Compile Include="DAL\Book_Master.cs" />
+    <Compile Include="DAL\Book_MasterDBAccess.cs" />
+    <Compile Include="DAL\College.cs" />
+    <Compile Include="DAL\CollegeDBAccess.cs" />
+    <Compile Include="DAL\Composite1_Desig.cs" />
+    <Compile Include="DAL\Composite1_DesigDBAccess.cs" />
+    <Compile Include="DAL\Composite_Dep.cs" />
+    <Compile Include="DAL\Composite_DepDBAccess.cs" />
+    <Compile Include="DAL\Department.cs" />
+    <Compile Include="DAL\DepartmentDBAccess.cs" />
+    <Compile Include="DAL\Designation.cs" />
+    <Compile Include="DAL\DesignationDBAccess.cs" />
+    <Compile Include="DAL\Fine.cs" />
+    <Compile Include="DAL\FineDBAccess.cs" />
+    <Compile Include="DAL\Member.cs" />
+    <Compile Include="DAL\MemberDBAccess.cs" />
+    <Compile Include="DAL\News.cs" />
+    <Compile Include="DAL\NewsDBAccess.cs" />
+    <Compile Include="DAL\Order_Detail.cs" />
+    <Compile Include="DAL\Order_DetailDBAccess.cs" />
+    <Compile Include="DAL\Order_Master.cs" />
+    <Compile Include="DAL\Order_MasterDBAccess.cs" />
+    <Compile Include="DAL\Purchase_Detail.cs" />
+    <Compile Include="DAL\Purchase_DetailDBAccess.cs" />
+    <Compile Include="DAL\Purchase_Master.cs" />
+    <Compile Include="DAL\Purchase_MasterDBAccess.cs" />
+    <Compile Include="DAL\Registration.cs" />
+    <Compile Include="DAL\RegistrationDBAccess.cs" />
+    <Compile Include="DAL\Reservation.cs" />
+    <Compile Include="DAL\ReservationDBAccess.cs" />
+    <Compile Include="DAL\Setting.cs" />
+    <Compile Include="DAL\SettingDBAccess.cs" />
+    <Compile Include="DAL\SqlDbHelper.cs" />
+    <Compile Include="DsvAccession.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsvAccession.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Librian.Master.cs">
+      <DependentUpon>Librian.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Librian.Master.designer.cs">
+      <DependentUpon>Librian.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Accession_entry.aspx.cs">
+      <DependentUpon>Accession_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Accession_entry.aspx.designer.cs">
+      <DependentUpon>Accession_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Accession_list.aspx.cs">
+      <DependentUpon>Accession_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Accession_list.aspx.designer.cs">
+      <DependentUpon>Accession_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_Return_entry.aspx.cs">
+      <DependentUpon>Book_Issue_Return_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_Return_entry.aspx.designer.cs">
+      <DependentUpon>Book_Issue_Return_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_Return_list.aspx.cs">
+      <DependentUpon>Book_Issue_Return_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_Return_list.aspx.designer.cs">
+      <DependentUpon>Book_Issue_Return_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Master_entry.aspx.cs">
+      <DependentUpon>Book_Master_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Master_entry.aspx.designer.cs">
+      <DependentUpon>Book_Master_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Master_list.aspx.cs">
+      <DependentUpon>Book_Master_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Master_list.aspx.designer.cs">
+      <DependentUpon>Book_Master_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\College_entry.aspx.cs">
+      <DependentUpon>College_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\College_entry.aspx.designer.cs">
+      <DependentUpon>College_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\College_list.aspx.cs">
+      <DependentUpon>College_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\College_list.aspx.designer.cs">
+      <DependentUpon>College_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Fine_entry.aspx.cs">
+      <DependentUpon>Fine_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Fine_entry.aspx.designer.cs">
+      <DependentUpon>Fine_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Fine_list.aspx.cs">
+      <DependentUpon>Fine_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Fine_list.aspx.designer.cs">
+      <DependentUpon>Fine_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Member_entry.aspx.cs">
+      <DependentUpon>Member_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Member_entry.aspx.designer.cs">
+      <DependentUpon>Member_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Member_list.aspx.cs">
+      <DependentUpon>Member_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Member_list.aspx.designer.cs">
+      <DependentUpon>Member_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\News_entry.aspx.cs">
+      <DependentUpon>News_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\News_entry.aspx.designer.cs">
+      <DependentUpon>News_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\News_list.aspx.cs">
+      <DependentUpon>News_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\News_list.aspx.designer.cs">
+      <DependentUpon>News_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Detail_entry.aspx.cs">
+      <DependentUpon>Order_Detail_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Detail_entry.aspx.designer.cs">
+      <DependentUpon>Order_Detail_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Detail_list.aspx.cs">
+      <DependentUpon>Order_Detail_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Detail_list.aspx.designer.cs">
+      <DependentUpon>Order_Detail_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Master_entry.aspx.cs">
+      <DependentUpon>Order_Master_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Master_entry.aspx.designer.cs">
+      <DependentUpon>Order_Master_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Master_list.aspx.cs">
+      <DependentUpon>Order_Master_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Order_Master_list.aspx.designer.cs">
+      <DependentUpon>Order_Master_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Detail_entry.aspx.cs">
+      <DependentUpon>Purchase_Detail_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Detail_entry.aspx.designer.cs">
+      <DependentUpon>Purchase_Detail_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Detail_list.aspx.cs">
+      <DependentUpon>Purchase_Detail_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Detail_list.aspx.designer.cs">
+      <DependentUpon>Purchase_Detail_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Master_entry.aspx.cs">
+      <DependentUpon>Purchase_Master_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Master_entry.aspx.designer.cs">
+      <DependentUpon>Purchase_Master_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Master_list.aspx.cs">
+      <DependentUpon>Purchase_Master_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Purchase_Master_list.aspx.designer.cs">
+      <DependentUpon>Purchase_Master_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Reservation_list.aspx.cs">
+      <DependentUpon>Reservation_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Reservation_list.aspx.designer.cs">
+      <DependentUpon>Reservation_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_entry.aspx.cs">
+      <DependentUpon>Book_Issue_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_entry.aspx.designer.cs">
+      <DependentUpon>Book_Issue_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Return_entry.aspx.cs">
+      <DependentUpon>Book_Return_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Return_entry.aspx.designer.cs">
+      <DependentUpon>Book_Return_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Change_Password.aspx.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Change_Password.aspx.designer.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Setting_entry.aspx.cs">
+      <DependentUpon>Setting_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Setting_entry.aspx.designer.cs">
+      <DependentUpon>Setting_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Setting_List.aspx.cs">
+      <DependentUpon>Setting_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Setting_List.aspx.designer.cs">
+      <DependentUpon>Setting_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\View_Total_Book.aspx.cs">
+      <DependentUpon>View_Total_Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\View_Total_Book.aspx.designer.cs">
+      <DependentUpon>View_Total_Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_List.aspx.cs">
+      <DependentUpon>Book_Issue_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Issue_List.aspx.designer.cs">
+      <DependentUpon>Book_Issue_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Return_List.aspx.cs">
+      <DependentUpon>Book_Return_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LIBRARIAN\Book_Return_List.aspx.designer.cs">
+      <DependentUpon>Book_Return_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="My Function\MyClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Accession.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accession.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Book_Issue.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Book_Issue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Book_Issue_Return.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Book_Issue_Return.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Book_Master.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Book_Master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Book_Return.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Book_Return.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Fine.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Member.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Member.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Order_Detail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Order_Detail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Order_Master.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Order_Master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Purchase_Detail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Purchase_Detail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Purchase_Master.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Purchase_Master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Reservation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reservation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Accession.aspx.cs">
+      <DependentUpon>Rpt_Accession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Accession.aspx.designer.cs">
+      <DependentUpon>Rpt_Accession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Issue.aspx.cs">
+      <DependentUpon>Rpt_Book_Issue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Issue.aspx.designer.cs">
+      <DependentUpon>Rpt_Book_Issue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Issue_Return.aspx.cs">
+      <DependentUpon>Rpt_Book_Issue_Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Issue_Return.aspx.designer.cs">
+      <DependentUpon>Rpt_Book_Issue_Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Master.aspx.cs">
+      <DependentUpon>Rpt_Book_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Master.aspx.designer.cs">
+      <DependentUpon>Rpt_Book_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Return.aspx.cs">
+      <DependentUpon>Rpt_Book_Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Book_Return.aspx.designer.cs">
+      <DependentUpon>Rpt_Book_Return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Fine.aspx.cs">
+      <DependentUpon>Rpt_Fine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Fine.aspx.designer.cs">
+      <DependentUpon>Rpt_Fine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Member.aspx.cs">
+      <DependentUpon>Rpt_Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Member.aspx.designer.cs">
+      <DependentUpon>Rpt_Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Order_Detail.aspx.cs">
+      <DependentUpon>Rpt_Order_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Order_Detail.aspx.designer.cs">
+      <DependentUpon>Rpt_Order_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Order_Master.aspx.cs">
+      <DependentUpon>Rpt_Order_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Order_Master.aspx.designer.cs">
+      <DependentUpon>Rpt_Order_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Purchase_Detail.aspx.cs">
+      <DependentUpon>Rpt_Purchase_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Purchase_Detail.aspx.designer.cs">
+      <DependentUpon>Rpt_Purchase_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Purchase_Master.aspx.cs">
+      <DependentUpon>Rpt_Purchase_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Purchase_Master.aspx.designer.cs">
+      <DependentUpon>Rpt_Purchase_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Reservation.aspx.cs">
+      <DependentUpon>Rpt_Reservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Reservation.aspx.designer.cs">
+      <DependentUpon>Rpt_Reservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Setting.aspx.cs">
+      <DependentUpon>Rpt_Setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Setting.aspx.designer.cs">
+      <DependentUpon>Rpt_Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_ViewTotalbook.aspx.cs">
+      <DependentUpon>Rpt_ViewTotalbook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_ViewTotalbook.aspx.designer.cs">
+      <DependentUpon>Rpt_ViewTotalbook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Setting.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Setting.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\View_Totalbook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>View_Totalbook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="USER\user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Book_Issue_Return_list.aspx.cs">
+      <DependentUpon>Book_Issue_Return_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Book_Issue_Return_list.aspx.designer.cs">
+      <DependentUpon>Book_Issue_Return_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Book_Master_list.aspx.cs">
+      <DependentUpon>Book_Master_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Book_Master_list.aspx.designer.cs">
+      <DependentUpon>Book_Master_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Reservation_entry.aspx.cs">
+      <DependentUpon>Reservation_entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Reservation_entry.aspx.designer.cs">
+      <DependentUpon>Reservation_entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book.aspx.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book.aspx.designer.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPass.aspx.cs">
+      <DependentUpon>ForgotPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPass.aspx.designer.cs">
+      <DependentUpon>ForgotPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Change_Password.aspx.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Change_Password.aspx.designer.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Reservation_List.aspx.cs">
+      <DependentUpon>Reservation_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Reservation_List.aspx.designer.cs">
+      <DependentUpon>Reservation_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\ViewBook.aspx.cs">
+      <DependentUpon>ViewBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\ViewBook.aspx.designer.cs">
+      <DependentUpon>ViewBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMIN\ADMIN.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ADMIN\auro-css\img\logo.psd" />
+    <None Include="ADMIN\auro-css\img\orange.psd" />
+    <None Include="ADMIN\auro-css\img\Thumbs.db" />
+    <None Include="DsvAccession.xsc">
+      <DependentUpon>DsvAccession.xsd</DependentUpon>
+    </None>
+    <None Include="DsvAccession.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsvAccession.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsvAccession.xss">
+      <DependentUpon>DsvAccession.xsd</DependentUpon>
+    </None>
+    <None Include="images\blog\Thumbs.db" />
+    <None Include="images\portfolio\Thumbs.db" />
+    <None Include="images\slider\01.psd" />
+    <None Include="images\slider\02.psd" />
+    <None Include="images\slider\03.psd" />
+    <None Include="images\slider\04.psd" />
+    <None Include="images\slider\05.psd" />
+    <None Include="images\slider\New Folder\Thumbs.db" />
+    <None Include="images\slider\Thumbs.db" />
+    <None Include="images\templatemo_logo.psd" />
+    <None Include="images\Thumbs.db" />
+    <None Include="jquery-ui-1.10.0\demos\autocomplete\search.php" />
+    <None Include="jquery-ui-1.10.0\demos\tabs\ajax\content3-slow.php" />
+    <None Include="jquery-ui-1.10.0\demos\tabs\ajax\content4-broken.php" />
+    <None Include="jquery-ui-1.10.0\MANIFEST" />
+    <None Include="jquery-ui-1.10.0\package.json" />
+    <None Include="jquery-ui-1.10.0\README.md" />
+    <None Include="jquery-ui-1.10.0\ui.accordion.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.autocomplete.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.button.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.core.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.datepicker.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.dialog.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.draggable.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.droppable.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-blind.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-bounce.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-clip.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-drop.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-explode.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-fade.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-fold.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-highlight.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-pulsate.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-scale.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-shake.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-slide.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect-transfer.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.effect.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.menu.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.mouse.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.position.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.progressbar.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.resizable.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.selectable.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.slider.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.sortable.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.spinner.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.tabs.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.tooltip.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui.widget.jquery.json" />
+    <None Include="jquery-ui-1.10.0\ui\.jshintrc" />
+    <Content Include="LIBRARIAN\Librian.Master" />
+    <Content Include="USER\user.Master" />
+    <None Include="LIBRARIAN\auro-css\img\logo.psd" />
+    <None Include="LIBRARIAN\auro-css\img\orange.psd" />
+    <None Include="LIBRARIAN\auro-css\img\Thumbs.db" />
+    <None Include="LIBRARIAN\images\blog\Thumbs.db" />
+    <None Include="LIBRARIAN\images\portfolio\Thumbs.db" />
+    <None Include="LIBRARIAN\images\slider\01.psd" />
+    <None Include="LIBRARIAN\images\slider\02.psd" />
+    <None Include="LIBRARIAN\images\slider\03.psd" />
+    <None Include="LIBRARIAN\images\slider\04.psd" />
+    <None Include="LIBRARIAN\images\slider\05.psd" />
+    <None Include="LIBRARIAN\images\slider\New Folder\Thumbs.db" />
+    <None Include="LIBRARIAN\images\slider\Thumbs.db" />
+    <None Include="LIBRARIAN\images\templatemo_logo.psd" />
+    <None Include="LIBRARIAN\images\Thumbs.db" />
+    <None Include="USER\images\blog\Thumbs.db" />
+    <None Include="USER\images\portfolio\Thumbs.db" />
+    <None Include="USER\images\slider\01.psd" />
+    <None Include="USER\images\slider\02.psd" />
+    <None Include="USER\images\slider\03.psd" />
+    <None Include="USER\images\slider\04.psd" />
+    <None Include="USER\images\slider\05.psd" />
+    <None Include="USER\images\slider\New Folder\Thumbs.db" />
+    <None Include="USER\images\slider\Thumbs.db" />
+    <None Include="USER\images\templatemo_logo.psd" />
+    <None Include="USER\images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\Accession.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Accession.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Book_Issue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Book_Issue.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Book_Issue_Return.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Book_Issue_Return.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Book_Master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Book_Master.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Book_Return.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Book_Return.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Fine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Fine.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Member.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Member.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Order_Detail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Order_Detail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Order_Master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Order_Master.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Purchase_Detail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Purchase_Detail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Purchase_Master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Purchase_Master.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Reservation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reservation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Setting.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Setting.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\View_Totalbook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>View_Totalbook.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1156</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

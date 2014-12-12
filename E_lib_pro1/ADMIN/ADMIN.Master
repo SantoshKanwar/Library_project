@@ -1,0 +1,102 @@
+﻿        
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ADMIN.master.cs" Inherits="AURO.ADMIN.ADMIN" %>        
+         
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">        
+         
+<html xmlns="http://www.w3.org/1999/xhtml" >        
+<head id="Head1" runat="server">        
+            
+   
+
+<link rel="stylesheet" type="text/css" href="auro-css/auro-style.css">
+
+	<link rel="stylesheet" href="../../themes/base/jquery.ui.all.css">
+	<script src="../jquery-ui-1.10.0/jquery-1.9.0.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.core.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.widget.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.datepicker.js"></script>
+	
+    <script src="../jquery-ui-1.10.0/ui/jquery.ui.effect.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.effect-blind.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.effect-bounce.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.effect-clip.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.effect-drop.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.effect-fold.js"></script>
+	<script src="../jquery-ui-1.10.0/ui/jquery.ui.effect-slide.js"></script>
+	
+    <script src="../jquery-ui-1.10.0/ui/jquery.ui.button.js"></script>
+	 
+
+    
+
+ <!--pemanggilan file css-->
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">        
+    </asp:ContentPlaceHolder>        
+    <style type="text/css">        
+        .style1        
+        {        
+            height: 400px;        
+            width: 243px;        
+        }        
+    </style>        
+</head>        
+<body> 
+      
+    <form id="form1" runat="server">        
+    <div id="header">
+	<div class="inHeader">
+		<div class="mosAdmin">
+		Welcome,  
+            <asp:Label ID="Label1" runat="server"></asp:Label><br>
+		<a href="Default.aspx">Home Page</a> | <a href="Change_Password.aspx">Change Password</a> | <a href="../Logout.aspx">Log Out</a>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+
+<div id="wrapper">
+	<div id="leftBar">
+	<ul>
+		<li><a href="College_list.aspx">College</a></li>
+		<li><a href="Department_list.aspx">Department</a></li>
+		<li><a href="Designation_list.aspx">Designation</a></li>
+        <li><a href="Composite_Dep_list.aspx">Clg Wise Dep</a></li>
+        <li><a href="Composite1_Desig_list.aspx">Clg Wise Des</a></li>
+        <li><a href="Member_list.aspx">Member</a></li>
+        <li><a href="Book_Master_list.aspx">Book Detail</a></li>
+        <li><a href="Book_Issue_Return_list.aspx">Book Iss&Ret</a></li>
+         
+        <li><a href="Accession_list.aspx">Accession</a></li>
+        <li><a href="News_list.aspx">News</a></li>
+        <li><a href="Reservation_list.aspx">Reservation</a></li>
+         <li><a href="Fine_list.aspx">Fine</a></li>
+        <li><a href="Order_Detail_list.aspx">Order-Detail</a></li>
+        <li><a href="Order_Master_list.aspx">Order-Master</a></li>
+        <li><a href="Purchase_Detail_list.aspx">Pur-Detail</a></li>
+        <li><a href="Purchase_Master_list.aspx">Pur-Master</a></li>
+        <li><a href="Setting_list.aspx">Setting</a></li>
+        <li><a href="View_Total_Book.aspx">View_Total_Book</a></li>
+        
+         
+	</ul>
+	</div>
+	<div id="rightContent" style="height :750px">
+
+	          
+              <div style="width:730px; height:800px; overflow:scroll">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
+                 
+                        </asp:ContentPlaceHolder>        
+
+                        </div>
+            </div>
+<div class="clear"></div>
+<div id="footer">
+	&copy; 2013 Copyright LibPro.com | <a href="#">e-LibPro</a> | Developed by <a href="#" target="_parent">Vandana Gurjar and Santosh Inda</a><br/>
+	
+</div>
+</div>
+</form>
+</body>
+</html>
